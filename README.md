@@ -5,11 +5,11 @@ This is the offical implementation for the paper titled "FusionBooster: A Unifie
 
 
 ## Environment
+```
 python 3.7.3
-
 torch 1.9.0
-
-scipy 1.2.0 (important!)
+scipy 1.2.0
+```
 
 ## Test
 To use our pre-trained FusionBooster to boost an arbitary IVIF method (e.g., DDcGAN):
