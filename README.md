@@ -10,7 +10,7 @@ python 3.7.3
 torch 1.9.0
 scipy 1.2.0
 ```
-## Test (End to end, you provide two source images, we directly output the enhanced results)
+## Test (End to end, you provide two source images, we directly output the enhanced fused image)
 Backbone: [MUFusion](https://github.com/AWCXV/MUFusion)
 For the IVIF task:
 ```
