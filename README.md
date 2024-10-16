@@ -10,8 +10,14 @@ python 3.7.3
 torch 1.9.0
 scipy 1.2.0
 ```
+## Test (End to end, you provide two source images, we directly output the enhanced results)
+Backbone: [MUFusion](https://github.com/AWCXV/MUFusion)
+For the IVIF task:
+```
+python xxx
+```
 
-## Test
+## Test (Booster Only, you provide the initial fused image, we enhance it)
 To use our pre-trained FusionBooster to boost an arbitary IVIF method (e.g., DDcGAN):
 
 ```
