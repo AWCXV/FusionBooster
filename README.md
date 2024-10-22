@@ -40,11 +40,11 @@ You can modify the path in the "test_booster_only.py" file, to enhance your own 
 ## Citation
 If this work is helpful to you, please cite it as:
 ```
-@article{cheng2023fusionbooster,
+@article{cheng2024fusionbooster,
   title={FusionBooster: A Unified Image Fusion Boosting Paradigm},
   author={Cheng, Chunyang and Xu, Tianyang and Wu, Xiao-Jun and Li, Hui and Li, Xi and Kittler, Josef},
-  journal={arXiv preprint arXiv:2305.05970},
-  year={2023}
+  journal={International Journal of Computer Vision},
+  year={2024}
 }
 ```
 
