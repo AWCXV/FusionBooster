@@ -6,7 +6,8 @@ from torch.autograd import Variable
 from net import ReconVISnet, ReconIRnet, ReconFuseNet
 import utils
 from utils import sumPatch
-from scipy.misc import imread, imsave, imresize
+import cv2
+from PIL import Image
 from args_fusion import args
 import numpy as np
 import time
@@ -67,9 +68,10 @@ def _generate_fusion_image(model, strategy_type, img1, img2):
 
 def run_demo(model_ReconFuse ,model_ReconIR ,model_ReconVIS , infrared_path, visible_path, output_path_root, fileName, input_methodX_dir, fusion_type, network_type, strategy_type, ssim_weight_str, mode):
 
-    ir_img = imread(infrared_path,mode='L');
-    vi_img = imread(visible_path,mode='L');
-    fused_img = imread(input_methodX_dir+fileName, mode = 'L');
+    ir_img = cv2.imread(infrared_path, cv2.IMREAD_GRAYSCALE)
+    vi_img = cv2.imread(visible_path, cv2.IMREAD_GRAYSCALE)
+    fused_img = cv2.imread(input_methodX_dir+fileName, cv2.IMREAD_GRAYSCALE)
+    
     ir_img=ir_img/255.0;
     vi_img=vi_img/255.0;
     fused_img = fused_img/255.0;
@@ -125,7 +127,8 @@ def run_demo(model_ReconFuse ,model_ReconIR ,model_ReconVIS , infrared_path, vis
     
     outputFuse = output_path_root+"fuse_" + fileName;
         
-    imsave(outputFuse,out[0,0,:,:].cpu().numpy());        
+        
+    cv2.imwrite(outputFuse, out[0,0,:,:].cpu().numpy())
     
     print(outputFuse);
 
