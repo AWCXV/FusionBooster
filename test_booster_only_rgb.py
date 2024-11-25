@@ -6,6 +6,7 @@ from torch.autograd import Variable
 from net import ReconVISnet, ReconIRnet, ReconFuseNet
 import utils
 from utils import sumPatch
+from PIL import Image
 import cv2
 from args_fusion import args
 import numpy as np
@@ -177,10 +178,10 @@ def main():
     strategy_type_list = ['AVG', 'L1','SC']  # addition, attention_weight, attention_enhance, adain_fusion, channel_fusion, saliency_mask
 
     strategy_type = strategy_type_list[1]
-    output_path = './outputs_enhancedDDcGAN_gray/';
+    output_path = './outputs_enhancedDDcGAN_rgb/';
     
     #based on this algorithm and enhance its result
-    input_methodX_dir = './Origin_DDcGAN_gray/';
+    input_methodX_dir = './Origin_DDcGAN_rgb/';
 
     if os.path.exists(output_path) is False:
         os.mkdir(output_path)
