@@ -21,7 +21,7 @@ python xxx
 To use our pre-trained FusionBooster to boost an arbitary IVIF method (e.g., DDcGAN):
 
 ```
-python test_booster_only.py
+python test_booster_only_rgb.py
 ```
 
 You can modify the path in the "test_booster_only.py" file, to enhance your own fusion results. 
