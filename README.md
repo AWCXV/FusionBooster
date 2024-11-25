@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="Figs/Result.png" width="1000px" />
+  <p>"Visualisation of the proposed FusionBooster when applied to the infrared and visilble image fusion approach DDcGAN."</p>
+</div>
+
 # FusionBooster
 This is the offical implementation for the paper titled "FusionBooster: A Unified Image Fusion Boosting Paradigm".
 
