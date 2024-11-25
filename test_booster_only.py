@@ -131,17 +131,17 @@ def run_demo(model_ReconFuse ,model_ReconIR ,model_ReconVIS , infrared_path, vis
 
 def main():
 
-    test_path = "./dataset/IVT_250/"
+    test_path = "./dataset/LLVIP/"
 
     network_type = 'densefuse'
     fusion_type = 'auto'  # auto, fusion_layer, fusion_all
     strategy_type_list = ['AVG', 'L1','SC']  # addition, attention_weight, attention_enhance, adain_fusion, channel_fusion, saliency_mask
 
     strategy_type = strategy_type_list[1]
-    output_path = './outputs_DDcGAN_filter_enhance_with_source/';
+    output_path = './outputs_enhancedDDcGAN_gray/';
     
     #based on this algorithm and enhance its result
-    input_methodX_dir = './LLVIP_test250_DDcGAN/';
+    input_methodX_dir = './Origin_DDcGAN_gray/';
 
     if os.path.exists(output_path) is False:
         os.mkdir(output_path)
