@@ -13,8 +13,8 @@ import numpy as np
 import time
 import torchvision.models as models
 from utils import gradient
-#torch.set_default_tensor_type(torch.DoubleTensor)
-torch.set_default_tensor_type(torch.FloatTensor)
+torch.set_default_tensor_type(torch.DoubleTensor)
+#torch.set_default_tensor_type(torch.FloatTensor)
 device_ids = [0]
 
 def load_model_reconIR(path, input_nc, output_nc):
@@ -104,10 +104,6 @@ def run_demo(model_ReconFuse ,model_ReconIR ,model_ReconVIS , infrared_path, vis
         ir_img_patches = ir_img_patches.cuda(args.device)
         vi_img_patches = vi_img_patches.cuda(args.device)
         fused_img_patches = fused_img_patches.cuda(args.device);
-
-    ir_img_patches = ir_img_patches.float();
-    vi_img_patches = vi_img_patches.float();
-    fused_img_patches = fused_img_patches.float();
     
     recIR = model_ReconIR(fusion = fused_img_patches);
     recVIS = model_ReconVIS(fusion = fused_img_patches);
@@ -122,10 +118,11 @@ def run_demo(model_ReconFuse ,model_ReconIR ,model_ReconVIS , infrared_path, vis
     #Booster Layer -- end
     
     out = model_ReconFuse(recIR = recIRe, recVIS = recVISe);
+    out = out * 255
     
     outputPath = "outputs/";
     
-    outputFuse = output_path_root+"fuse_" + fileName;
+    outputFuse = output_path_root + fileName;
         
         
     cv2.imwrite(outputFuse, out[0,0,:,:].cpu().numpy())

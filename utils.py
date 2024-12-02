@@ -41,7 +41,7 @@ def gradient(x):
         x = x.cuda(int(args.device));
     kernel = [[0.,1.,0.],[1.,-4.,1.],[0.,1.,0.]];
     #kernel = [[1 / 8, 1 / 8, 1 / 8], [1 / 8, -1, 1 / 8], [1 / 8, 1 / 8, 1 / 8]];
-    kernel = torch.FloatTensor(kernel).unsqueeze(0).unsqueeze(0)
+    kernel = torch.DoubleTensor(kernel).unsqueeze(0).unsqueeze(0)
     kernel = kernel.repeat(dim[1],dim[1],1,1);
     weight = nn.Parameter(data=kernel,requires_grad=False);
     if (args.cuda):
@@ -71,7 +71,7 @@ def sumPatch(x,k):
         x = x.cuda(int(args.device));
     kernel = np.ones((2*k+1,2*k+1));
     kernel = kernel/(1.0*(2*k+1)*(2*k+1));
-    kernel = torch.FloatTensor(kernel).unsqueeze(0).unsqueeze(0)
+    kernel = torch.DoubleTensor(kernel).unsqueeze(0).unsqueeze(0)
     kernel = kernel.repeat(dim[1],dim[1],1,1)    
     weight = nn.Parameter(data=kernel,requires_grad=False);
     if (args.cuda):
