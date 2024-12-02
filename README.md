@@ -16,10 +16,13 @@ torch 1.9.0
 scipy 1.2.0
 ```
 ## Test (End to end, you provide two source images, we directly output the enhanced fused image)
+**(If you want to report this result, please mark our mehtod as FusionBooster-MU)**
+
 Backbone: MUFusion
-For the IVIF task:
+
+### For the IVIF task:
 ```
-python xxx
+python test_e2e_rgb.py
 ```
 
 ## Test (Booster Only, you provide the initial fused image, we enhance it)
