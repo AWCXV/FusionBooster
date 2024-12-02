@@ -64,19 +64,19 @@ python test_booster_only_rgb.py
 You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 
-### Announcement
+### 5 Announcement
 - 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_rgb.py").
 - 2024-10-14 The code for boosting an arbitary method is available ("test_booster_only.py").
 - 2024-10-1 Because some of the fusion methods are realised using the tensorflow framework. Our FusionBooster demo will be implemented based on the [MUFusion](https://github.com/AWCXV/MUFusion). You can always use our "detached booster" to enhance your own fusion results. 
 - 2024-9-30 This work has been accepted by IJCV.
 
-### Highlight
+### 6 Highlight
 - We devise an image fusion booster by analysing the quality of the initial fusion results by means of a dedicated Information Probe.
 - The proposed FusionBooster is a general enhancer, which can be applied to various image fusion methods, e.g., traditional or learning-based algorithms, irrespective of the type of fusion task.
 - In a new divide-and-conquer image fusion paradigm, the results of the analysis performed by the Information Probe guide the refinement of the fused image.
 - The proposed FusionBooster significantly enhances the performance of the SOTA fusion methods and downstream detection tasks, with only a slight increase in the computational overhead.
 
-### Citation
+### 7 Citation
 If this work is helpful to you, please cite it as:
 ```
 @article{cheng2024fusionbooster,
