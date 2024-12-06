@@ -83,7 +83,7 @@ If this work is helpful to you, please cite it as:
   title={FusionBooster: A Unified Image Fusion Boosting Paradigm},
   author={Cheng, Chunyang and Xu, Tianyang and Wu, Xiao-Jun and Li, Hui and Li, Xi and Kittler, Josef},
   journal={International Journal of Computer Vision},
-  year={2024}
+  year={2025}
 }
 ```
 
