@@ -8,32 +8,10 @@ from torch import nn
 from PIL import Image
 from torch.autograd import Variable
 from args_fusion import args
-from scipy.misc import imread, imsave, imresize
 import torch.nn.functional as F
 import matplotlib as mpl
 from torchvision import datasets, transforms
 
-#./images/IV_images
-#./images/IV_images
-def getTranImagePatches(prepath):
-    patchesIR = [];
-    patchesVIS = [];
-    picIdx = 0;
-    for idx in range(0+1,21+1):
-        print("Decomposing"+str(idx)+"-th images...");
-        imageIR = imread(prepath+'/IR'+str(idx)+'.png', mode='L');
-        imageVIS = imread(prepath+'/VIS'+str(idx)+'.png', mode='L');
-        h = imageIR.shape[0];
-        w = imageIR.shape[1];
-        print(str(h)+","+str(w));
-        for i in range(0,h-args.PATCH_SIZE+1,args.PATCH_STRIDE):
-            for j in range(0,w-args.PATCH_SIZE+1,args.PATCH_STRIDE):
-                picIdx+=1;
-                patchImageIR = imageIR[i:i+args.PATCH_SIZE,j:j+args.PATCH_SIZE];
-                patchImageVIS = imageVIS[i:i+args.PATCH_SIZE,j:j+args.PATCH_SIZE];
-                imsave('./images/IV_patches/IR'+str(picIdx)+'.png',patchImageIR);
-                imsave('./images/IV_patches/VIS'+str(picIdx)+'.png',patchImageVIS);
-    return patchesIR,patchesVIS;
 
 def gradient(x):
     dim = x.shape;
@@ -265,42 +243,3 @@ def get_test_images(paths, height=None, width=None, mode='RGB'):
 # colormap
 def colormap():
     return mpl.colors.LinearSegmentedColormap.from_list('cmap', ['#FFFFFF', '#98F5FF', '#00FF00', '#FFFF00','#FF0000', '#8B0000'], 256)
-
-
-def save_images(path, data):
-    # if isinstance(paths, str):
-    #     paths = [paths]
-    #
-    # t1 = len(paths)
-    # t2 = len(datas)
-    # assert (len(paths) == len(datas))
-
-    # if prefix is None:
-    #     prefix = ''
-    # if suffix is None:
-    #     suffix = ''
-
-    if data.shape[2] == 1:
-        data = data.reshape([data.shape[0], data.shape[1]])
-    imsave(path, data)
-
-    # for i, path in enumerate(paths):
-    #     data = datas[i]
-    #     # print('data ==>>\n', data)
-    #     if data.shape[2] == 1:
-    #         data = data.reshape([data.shape[0], data.shape[1]])
-    #     # print('data reshape==>>\n', data)
-    #
-    #     name, ext = splitext(path)
-    #     name = name.split(sep)[-1]
-    #
-    #     path = join(save_path, prefix + suffix + ext)
-    #     print('data path==>>', path)
-    #
-    #     # new_im = Image.fromarray(data)
-    #     # new_im.show()
-    #
-    #     imsave(path, data)
-
-
-#getTranImagePatches('./images/IV_images');

@@ -2,11 +2,8 @@ import numpy as np
 import torch
 import math
 import torch.nn as nn
-from scipy.misc import imread, imsave, imresize
-import torch.nn.functional as F
-import fusion_strategy
 
-import fusion_strategy
+import torch.nn.functional as F
 
 class RefleConvRelu(nn.Module):
     # convolution
