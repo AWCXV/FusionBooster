@@ -63,6 +63,12 @@ python xxx.py
 
 You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
+## 5 Train
+
+### 4.1 For the IVIF task (Backbone: DDcGAN)
+[Training Set (DDcGAN Results on LLVIP)](https://pan.baidu.com/s/1X58UeWpLSBiFMlRi6pFOLw?pwd=hokf) Password: hokf
+
+[Training Set (Original LLVIP)](https://pan.baidu.com/s/1_I707esOlERfyMiUOzuZQg?pwd=jq15) Password: jq15
 
 ## 5 Announcement
 - 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_rgb.py").
