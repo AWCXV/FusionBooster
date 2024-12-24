@@ -85,7 +85,7 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 ### 7 Citation
 If this work is helpful to you, please cite it as:
 ```
-@article{cheng2024fusionbooster,
+@article{cheng2025fusionbooster,
   title={FusionBooster: A Unified Image Fusion Boosting Paradigm},
   author={Cheng, Chunyang and Xu, Tianyang and Wu, Xiao-Jun and Li, Hui and Li, Xi and Kittler, Josef},
   journal={International Journal of Computer Vision},
