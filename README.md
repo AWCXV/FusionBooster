@@ -1,6 +1,6 @@
 <div align="center">
   <img src="Figs/Result_1.png" width="1000px" />
-  <p>"Visualisation of the proposed FusionBooster when applied to the infrared and visilble image fusion approach task."</p>
+  <p>"Visualisation of the proposed FusionBooster when applied to the infrared and visilble image fusion task."</p>
 </div>
 
 ## 1 FusionBooster
