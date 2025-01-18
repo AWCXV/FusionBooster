@@ -17,12 +17,11 @@ scipy 1.2.0
 ```
 ## 3 Test (End to end, you provide two source images, we directly output the enhanced fused image)
 
-
 Backbone: MUFusion (If you want to report this result, please mark our mehtod as FusionBooster-MU)
 
 ### 3.1 For the IVIF task:
 ```
-python test_e2e_rgb.py
+python test_e2e_IVIF_rgb.py
 ```
 
 ### 3.2 For the MEIF task (to do):
@@ -31,10 +30,10 @@ python test_e2e_rgb.py
 python xxx.py
 ```
 
-### 3.3 For the MFIF task (to do):
+### 3.3 For the MFIF task:
 
 ```
-python xxx.py
+python test_e2e_MFIF_rgb.py
 ```
 
 ## 4 Test (Booster Only, you provide the initial fused image, we enhance it)
@@ -71,7 +70,8 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 [Training Set (Original LLVIP)](https://pan.baidu.com/s/1_I707esOlERfyMiUOzuZQg?pwd=jq15) Password: jq15
 
 ## 5 Announcement
-- 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_rgb.py").
+- 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py").
+- 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_IVIF_rgb.py").
 - 2024-10-14 The code for boosting an arbitary method is available ("test_booster_only.py").
 - 2024-10-1 Because some of the fusion methods are realised using the tensorflow framework. Our FusionBooster demo will be implemented based on the [MUFusion](https://github.com/AWCXV/MUFusion). You can always use our "detached booster" to enhance your own fusion results. 
 - 2024-9-30 This work has been accepted by IJCV.
