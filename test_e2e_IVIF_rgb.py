@@ -245,10 +245,10 @@ def main():
     in_c = 2
     out_c = 1
     mode = 'L'
-    model_path_ReconFuse = "./models/DDcGAN_ASE.model"
-    model_path_ReconInfrared = "./models/DDcGAN_InformationProbe_ir.model"
-    model_path_ReconVisible = "./models/DDcGAN_InformationProbe_vis.model"
-    model_path_MUFusion = "./models/MUFusion_IVIF.model"
+    model_path_ReconFuse = "./models/IVIF/ASE.model"
+    model_path_ReconInfrared = "./models/IVIF/InformationProbe_ir.model"
+    model_path_ReconVisible = "./models/IVIF/InformationProbe_vis.model"
+    model_path_MUFusion = "./models/IVIF/MUFusion.model"
 
     with torch.no_grad():
         ssim_weight_str = args.ssim_path[2]
