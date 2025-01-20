@@ -65,9 +65,16 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 ## 5 Train
 
 ### 4.1 For the IVIF task (Backbone: DDcGAN)
+
+#### Dataset:
 [Training Set (DDcGAN Results on LLVIP)](https://pan.baidu.com/s/1X58UeWpLSBiFMlRi6pFOLw?pwd=hokf) Password: hokf
 
 [Training Set (Original LLVIP)](https://pan.baidu.com/s/1_I707esOlERfyMiUOzuZQg?pwd=jq15) Password: jq15
+
+#### Implementation (todo):
+```
+python xxx.py
+```
 
 ## 5 Announcement
 - 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py").
