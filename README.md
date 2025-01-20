@@ -45,7 +45,7 @@ To use our pre-trained FusionBooster to boost an arbitary method:
 ### 4.1 For the IVIF task (Backbone: DDcGAN)
 
 ```
-python test_booster_only_rgb.py
+python test_booster_only_IVIF_rgb.py
 ```
 
 ### 4.2 For the MEIF task (to do)
