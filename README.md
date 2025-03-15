@@ -38,8 +38,6 @@ python test_e2e_MFIF_rgb.py
 
 ## 4 Test (Booster Only, you provide the initial fused image, we enhance it)
 
-
-
 To use our pre-trained FusionBooster to boost an arbitary method:
 
 ### 4.1 For the IVIF task (Backbone: DDcGAN)
@@ -63,6 +61,7 @@ python xxx.py
 You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 ## 5 Train
+Coming...
 
 ### 4.1 For the IVIF task (Backbone: DDcGAN)
 
