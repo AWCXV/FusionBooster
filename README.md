@@ -17,7 +17,7 @@ scipy 1.2.0
 ```
 ## 3 Test (End to end, you provide two source images, we directly output the enhanced fused image)
 
-Backbone: MUFusion (If you want to report this result, please mark our mehtod as FusionBooster-MU)
+Backbone: MUFusion (If you want to report this result, please mark our mehtod as FBooster-MU)
 
 ### 3.1 For the IVIF task:
 ```
@@ -61,6 +61,8 @@ python xxx.py
 You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 ## 5 Train
+[Train Data](...)
+
 Coming...
 
 ### 4.1 For the IVIF task (Backbone: DDcGAN)
