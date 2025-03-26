@@ -14,7 +14,7 @@ scipy 1.2.0
 ```
 ## <img width="32" src="Figs/test.png"> Test 
 
-### End to end, you provide two source images, we directly output the enhanced fused image
+### <img width="20" src="Figs/set.png"> End to end, you provide two source images, we directly output the enhanced fused image
 
 Backbone: MUFusion (If you want to report this result, please mark our mehtod as FBooster-MU)
 
@@ -35,7 +35,7 @@ python xxx.py
 python test_e2e_MFIF_rgb.py
 ```
 
-### Booster Only, you provide the initial fused image, we enhance it
+### <img width="20" src="Figs/set.png"> Booster Only, you provide the initial fused image, we enhance it
 
 To use our pre-trained FusionBooster to boost an arbitary method:
 
@@ -63,7 +63,8 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 
 <img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
 
-<img width="20" src="Figs/dataset.png"> Dataset:
+<img width="10" src="Figs/dataset.png"> Dataset:
+
 [Training Set (DDcGAN Results on LLVIP)](https://pan.baidu.com/s/1X58UeWpLSBiFMlRi6pFOLw?pwd=hokf) Password: hokf
 
 [Training Set (Original LLVIP)](https://pan.baidu.com/s/1_I707esOlERfyMiUOzuZQg?pwd=jq15) Password: jq15
