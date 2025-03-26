@@ -35,7 +35,7 @@ python xxx.py
 python test_e2e_MFIF_rgb.py
 ```
 
-### <img width="20" src="Figs/set.png"> Booster Only, you provide the initial fused image, we enhance it
+### <img width="25" src="Figs/set.png"> Booster Only, you provide the initial fused image, we enhance it
 
 To use our pre-trained FusionBooster to boost an arbitary method:
 
