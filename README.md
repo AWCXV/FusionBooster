@@ -14,7 +14,7 @@ scipy 1.2.0
 ```
 ## <img width="32" src="Figs/test.png"> Test 
 
-### <img width="20" src="Figs/set.png"> End to end, you provide two source images, we directly output the enhanced fused image
+### <img width="25" src="Figs/set.png"> End to end, you provide two source images, we directly output the enhanced fused image
 
 Backbone: MUFusion (If you want to report this result, please mark our mehtod as FBooster-MU)
 
