@@ -6,7 +6,7 @@ This is the offical implementation for the paper titled "FusionBooster: A Unifie
 [Paper](https://arxiv.org/abs/2305.05970)
 
 
-## <img width="32" src="Figs/environment.png"> Environment
+## <img width="38" src="Figs/environment.png"> Environment
 ```
 python 3.7.3
 torch 1.9.0
