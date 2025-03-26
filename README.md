@@ -63,7 +63,7 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 
 <img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
 
-<img width="10" src="Figs/dataset.png"> Dataset:
+<img width="15" src="Figs/dataset.png"> Dataset:
 
 [Training Set (DDcGAN Results on LLVIP)](https://pan.baidu.com/s/1X58UeWpLSBiFMlRi6pFOLw?pwd=hokf) Password: hokf
 
