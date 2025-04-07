@@ -1,6 +1,6 @@
 
 
-## FusionBooster
+## FusionBooster (2025' International Journal of Computer Vision)
 This is the offical implementation for the paper titled "FusionBooster: A Unified Image Fusion Boosting Paradigm".
 
 [Paper](https://arxiv.org/abs/2305.05970)
