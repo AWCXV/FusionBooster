@@ -16,9 +16,9 @@ scipy 1.2.0
 
 ### <img width="25" src="Figs/set.png"> End to end
 
-Backbone: MUFusion (If you want to report this result, please mark our mehtod as FBooster-MU)
+Use our pre-trained model to directly output enhanced fusion results based on two input images.
 
-<img width="20" src="Figs/task.png"> IVIF task:
+<img width="20" src="Figs/task.png"> IVIF task (Backbone: MUFusion):
 ```
 python test_e2e_IVIF_rgb.py
 ```
@@ -29,7 +29,7 @@ python test_e2e_IVIF_rgb.py
 python xxx.py
 ```
 
-<img width="20" src="Figs/task.png"> MFIF task:
+<img width="20" src="Figs/task.png"> MFIF task (Backbone: MUFusion):
 
 ```
 python test_e2e_MFIF_rgb.py
