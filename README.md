@@ -78,9 +78,10 @@ python train.py --path_to_ir_vis './train_data/LLVIP/' --path_to_init_fus './tra
 The trained model will be saved in the "models" folder automatically.
 
 ## <img width="32" src="Figs/announcement.png"> Announcement
-- 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py").
-- 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_IVIF_rgb.py").
-- 2024-10-14 The code for boosting an arbitary method is available ("test_booster_only.py").
+- 2025-5-9 The training code for IVIT task is now available. ("train.py")
+- 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py")
+- 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_IVIF_rgb.py")
+- 2024-10-14 The code for boosting an arbitary method is available. ("test_booster_only.py")
 - 2024-10-1 Because some of the fusion methods are realised using the tensorflow framework. Our FusionBooster demo will be implemented based on the [MUFusion](https://github.com/AWCXV/MUFusion). You can always use our "detached booster" to enhance your own fusion results. 
 - 2024-9-30 This work has been accepted by IJCV.
 
