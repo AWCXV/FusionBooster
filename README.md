@@ -14,7 +14,7 @@ scipy 1.2.0
 ```
 ## <img width="32" src="Figs/test.png"> Test 
 
-### <img width="25" src="Figs/set.png"> End to end, you provide two source images, we directly output the enhanced fused image
+### <img width="25" src="Figs/set.png"> End to end
 
 Backbone: MUFusion (If you want to report this result, please mark our mehtod as FBooster-MU)
 
@@ -35,7 +35,7 @@ python xxx.py
 python test_e2e_MFIF_rgb.py
 ```
 
-### <img width="25" src="Figs/set.png"> Booster Only, you provide the initial fused image, we enhance it
+### <img width="25" src="Figs/set.png"> Booster Only
 
 To use our pre-trained FusionBooster to boost an arbitary method:
 
