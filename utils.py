@@ -11,6 +11,8 @@ from args_fusion import args
 import torch.nn.functional as F
 import matplotlib as mpl
 from torchvision import datasets, transforms
+import cv2
+
 
 
 def gradient(x):
@@ -178,7 +180,7 @@ def load_dataset(image_path, BATCH_SIZE, num_imgs=None):
 
 def get_image(path, height=256, width=256, mode='L'):
     if mode == 'L':
-        image = imread(path, mode=mode)
+        image = cv2.imread(path, cv2.IMREAD_GRAYSCALE)    
     elif mode == 'RGB':
         image = Image.open(path).convert('RGB')
     image = image/255;

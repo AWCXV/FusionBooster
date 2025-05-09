@@ -1,0 +1,4 @@
+Organisation example:
+->LLVIP/infrared/train/10011.jpg
+->LLVIP/visible/train/10011.jpg
+->outputsLLVIPTrain/10011.jpg
