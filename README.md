@@ -61,7 +61,7 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 
 ## <img width="32" src="Figs/train.png"> Train
 
-<img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
+### <img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
 
 <img width="15" src="Figs/dataset.png"> Dataset:
 
@@ -69,10 +69,13 @@ You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your
 
 [Training Set (Original LLVIP)](https://pan.baidu.com/s/1_I707esOlERfyMiUOzuZQg?pwd=jq15) Password: jq15
 
-(todo):
+Put the above train data in the "train_data" folder and run the following prompt:
+
 ```
-python xxx.py
+python train.py --path_to_ir_vis './train_data/LLVIP/' --path_to_init_fus './train_data/outputsLLVIPTrain/'
 ```
+
+The trained model will be saved in the "models" folder automatically.
 
 ## <img width="32" src="Figs/announcement.png"> Announcement
 - 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py").
