@@ -23,41 +23,11 @@ Use our pre-trained model to directly output enhanced fusion results based on tw
 python test_e2e_IVIF_rgb.py
 ```
 
-<img width="20" src="Figs/task.png"> MEIF task (to do):
-
-```
-python xxx.py
-```
-
 <img width="20" src="Figs/task.png"> MFIF task (Backbone: MUFusion):
 
 ```
 python test_e2e_MFIF_rgb.py
 ```
-
-### <img width="25" src="Figs/set.png"> Booster Only
-
-To use our pre-trained FusionBooster to boost an arbitary method:
-
-<img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
-
-```
-python test_booster_only_IVIF_rgb.py
-```
-
-<img width="20" src="Figs/task.png"> MEIF task (to do)
-
-```
-python xxx.py
-```
-
-<img width="20" src="Figs/task.png"> MFIF task (to do)
-
-```
-python xxx.py
-```
-
-You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 ## <img width="32" src="Figs/train.png"> Train
 
@@ -76,6 +46,19 @@ python train.py --path_to_ir_vis './train_data/LLVIP/' --path_to_init_fus './tra
 ```
 
 The trained model will be saved in the "models" folder automatically.
+
+
+### <img width="25" src="Figs/set.png"> Test - Booster Only
+
+To use our pre-trained FusionBooster to boost an arbitary method:
+
+<img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
+
+```
+python test_booster_only_IVIF_rgb.py
+```
+
+You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 ## <img width="32" src="Figs/announcement.png"> Announcement
 - 2025-5-9 The training code for IVIT task is now available. ("train.py")
