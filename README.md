@@ -29,6 +29,12 @@ python test_e2e_IVIF_rgb.py
 python test_e2e_MFIF_rgb.py
 ```
 
+<img width="20" src="Figs/task.png"> MEIF task (Backbone: MUFusion):
+
+```
+python test_e2e_MEIF_rgb.py
+```
+
 ## <img width="32" src="Figs/train.png"> Train
 
 ### <img width="20" src="Figs/task.png"> IVIF task (Backbone: DDcGAN)
