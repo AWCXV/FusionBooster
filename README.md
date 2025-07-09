@@ -67,6 +67,7 @@ python test_booster_only_IVIF_rgb.py
 You can modify the path in the "test_booster_only_xxxx.py" file, to enhance your own fusion results. 
 
 ## <img width="32" src="Figs/announcement.png"> Announcement
+- 2025-7-9 The code for end-to-end boosting source images (MEIF) is now available. ("test_e2e_MEIF_rgb.py")
 - 2025-5-9 The training code for IVIT task is now available. ("train.py")
 - 2025-1-18 The code for end-to-end boosting source images (MFIF) is now available. ("test_e2e_MFIF_rgb.py")
 - 2024-10-14 The code for end-to-end boosting source images (IVIF) is now available. ("test_e2e_IVIF_rgb.py")
