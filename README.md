@@ -6,6 +6,11 @@ This is the offical implementation for the paper titled "FusionBooster: A Unifie
 [Paper](https://arxiv.org/abs/2305.05970)
 
 
+<div align="center">
+  <img src="Figs/Result_1.png" width="1000px" />
+  <p>"Visualisation of the proposed FusionBooster when applied to the infrared and visilble image fusion task."</p>
+</div>
+
 ## <img width="40" src="Figs/environment.png"> Environment
 ```
 python 3.7.3
