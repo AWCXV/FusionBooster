@@ -3,7 +3,7 @@
 ## FusionBooster (2025' IJCV)
 This is the offical implementation for the paper titled "FusionBooster: A Unified Image Fusion Boosting Paradigm".
 
-[Paper](https://arxiv.org/abs/2305.05970)
+[Paper]([https://arxiv.org/abs/2305.05970](https://link.springer.com/article/10.1007/s11263-024-02266-6))
 
 
 <div align="center">
